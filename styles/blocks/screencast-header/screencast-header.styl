@@ -10,9 +10,15 @@
 
     color #fff
 
+    @media (max-width: 650px)
+        padding 10px
+
     &__title
         font-size 60px
         font-weight normal
+
+        @media (max-width: 650px)
+            font-size 50px
 
     &__title-accent
         font-weight bold
@@ -32,16 +38,19 @@
         min-width 220px
 
     &__info,
-    & .share-icons__title
+    & .share-icons__title,
+    & .donate-icon__title
         font-size 12px
 
     &__info
         margin-top 20px
 
-    & .share-icons__title
+    & .share-icons__title,
+    & .donate-icon__title
         display block
 
-    & .share-icons .share
+    & .share-icons .share,
+    & .donate-icon .share
         transition unquote('color') 0.2s
 
     &__foot
